@@ -23,8 +23,13 @@ Which of the following sets of tuples are additionally deleted when the tuple $(
 ### Choices
 - [ ] $(2,2,5)$ and $(3,1,5)$
 - [ ] $(6,1,1)$ and $(7,4,1)$
-- [x] $(6,1,1)$, $(7,4,1)$, and $(8,4,7)$
+- [ ] $(6,1,1)$, $(7,4,1)$, and $(8,4,7)$
 - [ ] $(6,1,1)$, $(7,4,1)$, and $(2,2,5)$
+
+::: {.callout-note title="Answer" collapse=true}
+
+- [x] $(6,1,1)$, $(7,4,1)$, and $(8,4,7)$
+:::
 
 ### Feedback
 The ON DELETE CASCADE constraint is used to automatically delete rows from the child table when rows from the parent table are deleted. Hence, if the tuple $(1, 1, 5)$ is deleted, the tuples $(6, 1, 1)$, $(7, 4, 1)$, and $(8, 4, 7)$ will also be deleted to maintain referential integrity.
